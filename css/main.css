@@ -1,0 +1,480 @@
+/* html5 boilerplate */
+
+/* site-wide font */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,200,300,400,900);
+
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #044;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #044;
+    color: #fff;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px "Lato", Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight:300;
+}
+
+/* General */
+
+    .slide .wrapper h1 {
+
+        line-height: 0.9em;
+        font-size:3.5em;
+        font-weight: 200;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .slide .wrapper p {
+        font-size: 1.5em;
+    }
+
+/* Navigation */
+
+    .header-container {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: #233;
+        color: #fff;
+        z-index: 999;
+    }
+
+    h1.title {
+        color: #fff;
+        
+        display: inline-block;
+        font-weight:200;
+        float: left;
+    }
+
+    h1.title a:link,
+    h1.title a:visited {
+        color: #eee;
+        text-decoration: none;
+    }
+    h1.title a:hover {
+        color: #fc8;
+    }
+
+    
+
+    .header-container nav {
+        margin: 25px 0;
+        display:inline-block;
+        width:80%;
+        float:left;
+    }
+
+    .header-container nav ul {
+        vertical-align: text-bottom;
+        margin: 0 0;
+    }
+
+    .header-container nav ul li {
+        padding: 0 20px;
+        display: inline-block;
+        list-style-image: none;
+    }
+
+    nav a {
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #eee;
+        text-decoration: none;
+    }
+
+    nav a:visited {color:#ccc;}
+
+    nav a:hover {color: #c92;}
+
+/* About */
+
+    .about {
+        background-color: #222;
+        color: #fff;
+    }
+    .about > .wrapper > h1 {
+        margin-top: 125px;
+        font-size: 5em;
+    }
+
+
+    .about p a:link,
+    .about p a:visited {
+        border-radius: 5px;
+        display: inline-block;
+        padding: 2px 10px;
+        text-transform: uppercase;
+        font-size:0.7em;
+        font-weight: 300;
+        text-decoration: none;
+        color: #ddd;
+        background-color: transparent;
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        transition: background-color 0.3s;
+    }
+    .about p a:hover {
+        background-color: #233;
+        color: #ccc;
+    }
+
+/* Gallery */
+
+    .gallery {
+        background-color: #000;
+        color: #fff;
+        padding-bottom:0px;
+        margin: 0 0;
+    }
+
+    .gallery > .wrapper > h1 {
+        position:relative;
+        margin: 0 0;
+        top: 100px;
+        left: -100px;
+        z-index: 888;
+    }
+
+    .gallery .options,
+    .gallery .options:visited {
+        z-index: 888;
+        position: relative;
+        top: 60px;
+        margin: 0 2px;
+        font-size: 0.65em;
+        border-radius: 2px;
+        padding: 2px 4px;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #aaa;
+        border: 1px solid #777;
+    }
+
+    .gallery .options:hover {
+
+        border: 1px solid #fff;
+        color:#fff;
+    }
+    .gallery .options:active {
+        color:#fc8;
+        border: 1px solid #fc8;
+    }
+
+    .gallery-wrapper .gallery-nav {
+        opacity: 0.0;
+        transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -webkit-transition: opacity 1s;
+    }
+    .gallery-wrapper:hover .gallery-nav {
+        opacity: 1.0;
+        transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -webkit-transition: opacity 0.5s;
+    }
+
+
+    .gallery .gallery-nav span {
+        pointer-events:none;
+        padding-left: 10%;
+        cursor: pointer;
+        position:relative;
+        top: 300px;
+    }
+    .gallery .gallery-nav span:hover {
+
+
+    }
+
+
+    .gallery .gallery-nav span img {
+        z-index: 888;
+        opacity: 1;
+        width:25%;
+    }
+
+    .gallery ul.horizontal-view {
+        padding: 0 0;
+        width: 100%;
+        background-color: #000;
+        overflow-y: hidden;
+        overflow-x:hidden;
+        white-space: nowrap;
+    }
+    .gallery ul.horizontal-view li {
+        padding:0 25%;
+    }
+
+    .gallery li {
+        background-color:#000;
+        margin: 0 auto;
+
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .gallery ul.horizontal-view li img {
+        opacity: 0.9;
+        width:100%;
+    }
+
+    .gallery ul.horizontal-view li img:hover {
+
+        opacity:1.0;
+    }
+
+
+    .gallery ul.overview  {
+        margin: 0 auto;
+        padding: 0 0;
+        width: 70%;
+
+    }
+    .gallery ul.overview li {
+        margin: 0 0;
+        display: inline-block;
+    }
+
+    .gallery ul.overview img {
+
+        opacity: 0.9;
+        max-height:220px;
+        margin: 2px 2px;
+        cursor: pointer;
+    }
+
+    .gallery ul.overview img:hover {
+        opacity: 1.0;
+    }
+
+/* Contact */
+    .contact {
+        background-color: #ddd;
+    }
+
+
+@media only screen and (min-width: 480px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+.pull-right {
+    float:right;
+}
+
+.pull-left {
+    float: left;
+}
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

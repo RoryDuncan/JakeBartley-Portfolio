@@ -1,0 +1,11 @@
+
+Add files with this naming scheme:
+
+"photo_" + X
+
+where X is a number.
+
+The image must be a "jpg".
+
+example:
+photo_200.jpg
