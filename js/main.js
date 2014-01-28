@@ -104,6 +104,8 @@ var renderImages = function(gallery) {
   
   console.log(window.loadedImages + "/" + NUMBER_OF_IMAGES  + " gallery images loaded.");
 
+  $("#itemcount").text(window.loadedImages + " photos" );
+
   for ( x = 0, xx = gallery.length; x< xx; x++ ) {
 
     $(gallery[x]).attr("id", "gallery-item-" + x );
@@ -184,17 +186,22 @@ $(document).ready(
       e.preventDefault();
       $(".gallery ul").toggleClass("horizontal-view");
       $(".gallery ul").toggleClass("overview");
+      $("#itemcount").fadeToggle(800);
       if ( $(".change-mode").text() === "overview" ) {
         $(".change-mode").text("gallery");
         $(".gallery-nav").hide();
         $(".gallery > .wrapper > h1").animate({"top": "0px"})
+        $(".gallery .overview li").show();
       }
       else {
+
         $(".change-mode").text("overview");
         $(".gallery > .wrapper > h1").animate({"top": "100px"})
         $(".gallery-nav").show();
       }
     });
+
+
 
 
      var scroll = function(e) {

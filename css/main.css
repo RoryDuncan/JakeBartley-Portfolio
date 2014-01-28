@@ -199,7 +199,7 @@ h5 {
         position:relative;
         margin: 0 0;
         top: 100px;
-        left: -100px;
+        left: -5%;
         z-index: 888;
     }
 
@@ -316,6 +316,13 @@ h5 {
         opacity: 1.0;
     }
 
+    #itemcount {
+        display: inline-block;
+        display: none;
+        position: absolute;
+        padding: 5px;
+    }
+
 /* Contact */
     .contact {
         background-color: #ddd;
@@ -342,6 +349,14 @@ h5 {
    Helper classes
    ========================================================================== */
 
+
+
+.muted {
+    color: #555;
+}
+.small {
+    font-size:0.65em;
+}
 
 .pull-right {
     float:right;
