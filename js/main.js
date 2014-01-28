@@ -1,4 +1,6 @@
 
+
+
 var NUMBER_OF_IMAGES = 9;  // Count 0 as a number
 
     /* * helpers * */
@@ -46,7 +48,14 @@ var setSlideHeight = function() {
 
 
 var loadImages = function(result, prefix, path, max, suffix, callback) {
+  /*
+  
+  WARNING:
 
+  this method is kind of hacky, ideally it would use a server to determine the images to be loaded, etc.
+  
+
+  */
   window.loadedImages = 0;
 
   var pre = prefix || "",
@@ -179,7 +188,7 @@ $(document).ready(
     // will load into window.gallery
 
 
-    /*  * EVENTS *  */ 
+  /*  * EVENTS *  */ 
 
     // for changing the view in the gallery
     $(".change-mode").click(function(e){

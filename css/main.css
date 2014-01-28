@@ -138,7 +138,7 @@ h5 {
     }
 
     .header-container nav ul li {
-        padding: 0 20px;
+        padding: 0 25px;
         display: inline-block;
         list-style-image: none;
     }
@@ -168,22 +168,24 @@ h5 {
 
     .about p a:link,
     .about p a:visited {
+        margin: 5px 2px;
+        border: 1px solid #fff;
         border-radius: 5px;
         display: inline-block;
-        padding: 2px 10px;
+        padding: 2px 6px;
         text-transform: uppercase;
-        font-size:0.7em;
+        font-size:0.65em;
         font-weight: 300;
         text-decoration: none;
-        color: #ddd;
-        background-color: transparent;
+        color: #000;
+        background-color: #eee;
         -webkit-transition: background-color 0.3s;
         -moz-transition: background-color 0.3s;
         transition: background-color 0.3s;
     }
     .about p a:hover {
-        background-color: #233;
-        color: #ccc;
+        background-color: #fff;
+
     }
 
 /* Gallery */
@@ -195,12 +197,14 @@ h5 {
         margin: 0 0;
     }
 
-    .gallery > .wrapper > h1 {
+    .gallery  h1 {
+        opacity: 1.0;
+        color: #fff;
         position:relative;
         margin: 0 0;
         top: 100px;
         left: -5%;
-        z-index: 888;
+        z-index: 800;
     }
 
     .gallery .options,
@@ -231,6 +235,7 @@ h5 {
 
     .gallery-wrapper .gallery-nav {
         opacity: 0.0;
+        z-index: 888;
         transition: opacity 1s;
         -moz-transition: opacity 1s;
         -webkit-transition: opacity 1s;
@@ -250,10 +255,6 @@ h5 {
         position:relative;
         top: 300px;
     }
-    .gallery .gallery-nav span:hover {
-
-
-    }
 
 
     .gallery .gallery-nav span img {
@@ -263,6 +264,7 @@ h5 {
     }
 
     .gallery ul.horizontal-view {
+        margin: 0 0;
         padding: 0 0;
         width: 100%;
         background-color: #000;
@@ -295,7 +297,7 @@ h5 {
 
     .gallery ul.overview  {
         margin: 0 auto;
-        padding: 0 0;
+        padding: 0 0 300px 0;
         width: 70%;
 
     }
@@ -325,7 +327,7 @@ h5 {
 
 /* Contact */
     .contact {
-        background-color: #ddd;
+        background-color: #ccc;
     }
 
 
@@ -352,7 +354,7 @@ h5 {
 
 
 .muted {
-    color: #555;
+    color: #999;
 }
 .small {
     font-size:0.65em;
