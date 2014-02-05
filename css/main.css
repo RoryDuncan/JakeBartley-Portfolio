@@ -64,24 +64,26 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-body {
-    font: 16px/26px "Lato", Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-weight:300;
-}
 
 /* General */
+
+    body {
+        min-width: 480px;
+        font: 16px/26px "Lato", Helvetica, Helvetica Neue, Arial;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-weight:300;
+    }
 
     .slide .wrapper h1 {
 
@@ -98,7 +100,7 @@ h5 {
 /* Navigation */
 
     .header-container {
-        position: fixed;
+        position: top;
         top: 0px;
         width: 100%;
         background-color: #233;
@@ -107,8 +109,9 @@ h5 {
     }
 
     h1.title {
+
+        float: left;
         color: #fff;
-        
         display: inline-block;
         font-weight:200;
         float: left;
@@ -123,13 +126,12 @@ h5 {
         color: #fc8;
     }
 
-    
 
     .header-container nav {
-        margin: 25px 0;
+
+        margin: 10px 0;
         display:inline-block;
-        width:80%;
-        float:left;
+        width:100%;
     }
 
     .header-container nav ul {
@@ -138,6 +140,7 @@ h5 {
     }
 
     .header-container nav ul li {
+
         padding: 0 25px;
         display: inline-block;
         list-style-image: none;
@@ -157,8 +160,8 @@ h5 {
 /* About */
 
     .about {
-        background-color: #222;
-        color: #fff;
+        background-color: #223030;
+        color: #fc4;
     }
     .about > .wrapper > h1 {
         margin-top: 125px;
@@ -258,7 +261,7 @@ h5 {
 
 
     .gallery .gallery-nav span img {
-        z-index: 888;
+        z-index: 999;
         opacity: 1;
         width:25%;
     }
@@ -285,7 +288,7 @@ h5 {
     }
 
     .gallery ul.horizontal-view li img {
-        opacity: 0.9;
+        opacity: 1;
         width:100%;
     }
 
@@ -330,10 +333,66 @@ h5 {
         background-color: #ccc;
     }
 
+    .contact h1 {
+        color: #000;
+        margin-top:100px;
+        margin-bottom: 100px;
+    }
+
+
+    .contact ul {
+        width:80%;
+    }
+
+
+    .contact ul li a {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 2px;
+        background-color:#dadada;
+        padding: 4px 44px;
+        min-width: 100px;
+        display:inline-block;
+        border: 1px solid transparent;
+        font-size:1em;
+        color: #000;
+        font-weight: 400;
+    }
+
+    .contact ul li img {
+
+    }
+
+    .contact ul a,
+    .contact ul a:visited {
+        color: #000;
+    }
+    .contact ul a:hover {
+       color: #c92;
+    }
+
+    .contact ul li a:hover {
+        color: #000;
+        background-color:#fff;
+    }
+
+
 
 @media only screen and (min-width: 480px) {}
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+
+    .header-container {
+        position:fixed;
+    }
+    .header-container nav {
+
+        margin: 25px 0;
+        display:inline-block;
+        width:60%;
+    }
+}
 
 @media only screen and (min-width: 1140px) {
 
@@ -344,86 +403,106 @@ h5 {
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+
     }
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
 
-
-.muted {
-    color: #999;
-}
-.small {
-    font-size:0.65em;
 }
 
-.pull-right {
-    float:right;
-}
+/*==========================================================================
+Helper classes
+ ========================================================================== */
 
-.pull-left {
-    float: left;
-}
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
+    .unstyled {
+        display: block;
+    }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
+    .unstyled li {
+        margin-left: 10px;
+        list-style-image: none;
+        display: inline-block;
+    }
 
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
+    .casesensitive,
+    .casesensitive * {
+        text-transform: none !important;
+    }
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
+    .casesensitive:hover {
+        cursor: text !important;
+    }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
+    .muted {
+        color: #999;
+    }
+    .small {
+        font-size:0.65em;
+    }
 
-.invisible {
-    visibility: hidden;
-}
+    .pull-right {
+        float:right;
+    }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
+    .pull-left {
+        float: left;
+    }
+    .ir {
+        background-color: transparent;
+        border: 0;
+        overflow: hidden;
+        *text-indent: -9999px;
+    }
 
-.clearfix:after {
-    clear: both;
-}
+    .ir:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 150%;
+    }
 
-.clearfix {
-    *zoom: 1;
-}
+    .hidden {
+        display: none !important;
+        visibility: hidden;
+    }
+
+    .visuallyhidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+    .invisible {
+        visibility: hidden;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        *zoom: 1;
+    }
 
 /* ==========================================================================
    Print styles

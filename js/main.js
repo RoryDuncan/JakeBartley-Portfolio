@@ -42,7 +42,7 @@ var setSlideHeight = function() {
   });
 
 
-  $(".about").css({"background":"url('img/backdrop.png') 10% 0px no-repeat fixed"});
+  //$(".about").css({"background":"url('img/backdrop.png') 0 0px no-repeat fixed"});
 
 };
 
@@ -201,9 +201,10 @@ $(document).ready(
         $(".gallery-nav").hide();
         $(".gallery > .wrapper > h1").animate({"top": "0px"})
         $(".gallery .overview li").show();
+        $(".gallery .overview").css({"max-height":"none"});
       }
       else {
-
+        $(".gallery .horizontal-view").css({"max-height":"700px"});
         $(".change-mode").text("overview");
         $(".gallery > .wrapper > h1").animate({"top": "100px"})
         $(".gallery-nav").show();
